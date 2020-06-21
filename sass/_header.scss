@@ -58,21 +58,46 @@
             flex-basis: 100%;
             font-size: 5rem;
         }
-
-        
-          
-        @keyframes glow {
+       @keyframes glow {
             from {
               text-shadow: 0 0 20px #e9eff0e5;
             }
             to {
               text-shadow: 0 0 30px #d1e6e9, 0 0 10px #b7e2e7ec;
             }
-          }
+          }   
+    }
 
     
-        
+
+    .water{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: +1;
     }
+    .water h1{
+        z-index: +1;
+        letter-spacing: 5px;
+        font-family: 'Teko', sans-serif;
+        font-size: 4rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #ffffff5d;
+        background-image: url(../img/water.png);
+        -webkit-background-clip: text;
+        animation: water 15s infinite;
+    }
+    @keyframes water {
+        from{
+            background-position: left 0 top -25px;
+        }
+        to{
+            background-position: left 1000px top -25px;
+        }
+    }
+
     &__text {
         margin-left: 10vw;
         align-self: center;
@@ -96,6 +121,6 @@
         background-color: rgba(26, 25, 25, 0.404);
     }
 }
-canvas {
+    canvas {
     display: block;
 }

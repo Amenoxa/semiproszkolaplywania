@@ -26,6 +26,18 @@
     &__main {
         flex-basis: 50%;
     }
+    &__hello {
+        color: rgb(97, 97, 97);
+        position: relative;
+        flex-basis: 50%;
+        margin: 10px;
+        padding: 15px;
+        align-self: flex-start;
+        text-align: justify;
+        span {
+            color: rgb(8, 93, 204);
+        }
+    }
     &__text {
         position: relative;
         flex-basis: 50%;

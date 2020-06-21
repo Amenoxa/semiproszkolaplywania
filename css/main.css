@@ -145,6 +145,47 @@ body {
   }
 }
 
+.header .water {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: +1;
+}
+
+.header .water h1 {
+  z-index: +1;
+  letter-spacing: 5px;
+  font-family: 'Teko', sans-serif;
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffffff5d;
+  background-image: url(../img/water.png);
+  -webkit-background-clip: text;
+  -webkit-animation: water 15s infinite;
+          animation: water 15s infinite;
+}
+
+@-webkit-keyframes water {
+  from {
+    background-position: left 0 top -25px;
+  }
+  to {
+    background-position: left 1000px top -25px;
+  }
+}
+
+@keyframes water {
+  from {
+    background-position: left 0 top -25px;
+  }
+  to {
+    background-position: left 1000px top -25px;
+  }
+}
+
 .header__text {
   margin-left: 10vw;
   -ms-flex-item-align: center;
@@ -352,6 +393,22 @@ canvas {
 .about__main {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+}
+
+.about__hello {
+  color: #616161;
+  position: relative;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  margin: 10px;
+  padding: 15px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  text-align: justify;
+}
+
+.about__hello span {
+  color: #085dcc;
 }
 
 .about__text {
@@ -598,8 +655,8 @@ canvas {
   }
 }
 
-.motoryka {
-  background: url(../img/background/motoryka-bg.jpg) center fixed;
+.oswajanie {
+  background: url(../img/background/oswajanie-bg.jpg) center fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -620,7 +677,7 @@ canvas {
           justify-content: center;
 }
 
-.motoryka__title {
+.oswajanie__title {
   text-align: center;
   text-transform: uppercase;
   margin: auto;
@@ -633,26 +690,26 @@ canvas {
 }
 
 @media (max-width: 485px) {
-  .motoryka__title {
+  .oswajanie__title {
     font-size: 1.2rem;
   }
 }
 
-.motoryka__top {
+.oswajanie__top {
   position: absolute;
   width: 100%;
   left: 0;
   top: 0;
 }
 
-.motoryka__bottom {
+.oswajanie__bottom {
   position: absolute;
   width: 100%;
   left: 0;
   bottom: 0;
 }
 
-.motoryka__item {
+.oswajanie__item {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -664,19 +721,20 @@ canvas {
   max-width: 350px;
 }
 
-.motoryka__subtitle {
+.oswajanie__subtitle {
   color: white;
   text-align: center;
 }
 
-.motoryka__description {
+.oswajanie__description {
   color: white;
-  text-align: justify;
+  text-align: center;
   padding-left: 20px;
   padding-right: 20px;
+  line-height: 2rem;
 }
 
-.motoryka__image {
+.oswajanie__image {
   -ms-grid-column-align: center;
       justify-self: center;
   max-width: 350px;
@@ -690,7 +748,7 @@ canvas {
 }
 
 @media (max-width: 390px) {
-  .motoryka__image {
+  .oswajanie__image {
     max-width: 300px;
   }
 }

@@ -10,11 +10,11 @@ doc.ready(function(){
     $(window).scrollTop(0);
 
     var typed = new Typed(".header__text", {
-      strings: ['Profesjonalne podejście do sportu <b>Młodzieżowego</b>', 'Profesjonalne podejście do sportu <b>Amatorskiego</b>'],
+      strings: ['Nauka pływania dla <b>dzieci</b>', 'Nauka pływania dla <b>młodzieży</b>', 'Nauka pływania dla <b>i dorosłych</b>'],
       typeSpeed: 30,
       backSpeed: 30,
       smartBackspace: true, // this is a default
-      backDelay: 5000,
+      backDelay: 2000,
       loop: true
       });
 
