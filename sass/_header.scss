@@ -55,7 +55,6 @@
         font-family: 'Teko', sans-serif;
         animation: glow 2s ease-in-out infinite alternate;
         @media (max-width: 999px){
-            flex-basis: 100%;
             font-size: 5rem;
         }
        @keyframes glow {
@@ -71,13 +70,17 @@
     
 
     .water{
+        margin: 0px 0 0 0;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
         z-index: +1;
+        flex-basis: 100%;
+        align-content: center;
     }
     .water h1{
+        margin: 0px;
         z-index: +1;
         letter-spacing: 5px;
         font-family: 'Teko', sans-serif;
@@ -88,6 +91,20 @@
         background-image: url(../img/water.png);
         -webkit-background-clip: text;
         animation: water 15s infinite;
+        @media (max-width: 1100px){
+            font-size: 3rem;
+            letter-spacing: 4px;
+        }
+        @media (max-width: 900px){
+            font-size: 2rem;
+            letter-spacing: 3px;
+        }
+        @media (max-width: 600px){
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+            animation: none;
+            -webkit-animation: none;
+}
     }
     @keyframes water {
         from{

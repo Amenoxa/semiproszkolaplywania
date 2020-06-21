@@ -121,8 +121,6 @@ body {
 
 @media (max-width: 999px) {
   .header__title {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
     font-size: 5rem;
   }
 }
@@ -146,15 +144,21 @@ body {
 }
 
 .header .water {
+  margin: 0px 0 0 0;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: +1;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .header .water h1 {
+  margin: 0px;
   z-index: +1;
   letter-spacing: 5px;
   font-family: 'Teko', sans-serif;
@@ -166,6 +170,29 @@ body {
   -webkit-background-clip: text;
   -webkit-animation: water 15s infinite;
           animation: water 15s infinite;
+}
+
+@media (max-width: 1100px) {
+  .header .water h1 {
+    font-size: 3rem;
+    letter-spacing: 4px;
+  }
+}
+
+@media (max-width: 900px) {
+  .header .water h1 {
+    font-size: 2rem;
+    letter-spacing: 3px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header .water h1 {
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    animation: none;
+    -webkit-animation: none;
+  }
 }
 
 @-webkit-keyframes water {
