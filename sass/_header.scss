@@ -1,0 +1,101 @@
+.header {
+    display: flex;
+    width: 100%;
+	padding: 0;
+	
+	background-color: rgba(41, 40, 40, 0.637);
+    -webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+    -o-background-size: cover;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    position: relative;
+    overflow: hidden;
+
+    &__background {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: 0;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+    }
+    
+    &__bottom {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        z-index: +1;
+    }
+
+    &__title {
+        letter-spacing: 5px;
+        font-weight: 800;
+
+        margin-top: 35vh;
+        font-size: 8rem;
+        color: rgba(211, 204, 204, 0.815);
+        text-transform: uppercase;
+        flex-basis: 100%;
+        position: relative;
+        text-align: center;
+        z-index: +1;
+        margin-bottom: 0px;
+        color: #fafafaf1;
+        z-index: 1;
+        font-family: 'Teko', sans-serif;
+        animation: glow 2s ease-in-out infinite alternate;
+        @media (max-width: 999px){
+            flex-basis: 100%;
+            font-size: 5rem;
+        }
+
+        
+          
+        @keyframes glow {
+            from {
+              text-shadow: 0 0 20px #e9eff0e5;
+            }
+            to {
+              text-shadow: 0 0 30px #d1e6e9, 0 0 10px #b7e2e7ec;
+            }
+          }
+
+    
+        
+    }
+    &__text {
+        margin-left: 10vw;
+        align-self: center;
+        text-align: center;
+        font-size: 2rem;
+        flex-basis: 100%;
+        color: rgba(218, 216, 216, 0.925);
+        position: relative;
+        z-index: +1;
+        @media (max-width: 999px){
+            flex-basis: 100%;
+            margin: 10px;
+            font-size: 1.2rem;
+        }
+    }
+    &__overlay-particles {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: +1;
+        background-color: rgba(26, 25, 25, 0.404);
+    }
+}
+canvas {
+    display: block;
+}

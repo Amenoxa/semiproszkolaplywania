@@ -1,0 +1,91 @@
+.menu {
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 7vh;
+    min-height: 60px;
+    justify-content: stretch;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(22, 22, 22, 0.89);
+    z-index: +2;
+    justify-content: space-between;
+
+    &__logo {
+        font-weight: 900;
+        padding-top: 10px;
+        max-width: 20vw;
+        position: relative;
+        padding-left: 10px;
+        text-align: center;
+        font-size: 20px;
+        text-decoration: none;
+        color: white;
+        max-width: 20vw;
+        flex-basis: 10%;
+        display: flex;
+        float: left;
+        overflow: hidden;
+        @media (max-width: 810px){
+            max-width: 50vw;
+            position: absolute;
+        }
+    }
+
+    &__list {
+        list-style-type: none;
+        display: flex;
+        flex-basis: 75%;
+        justify-content: space-evenly;
+        @media (max-width: 810px){
+            letter-spacing: 2px;
+            display: none;
+            flex-basis: 100%;
+            min-height: 10rem;
+            background-color: rgba(3, 2, 8, 0.952);
+            padding-top: 10px;
+            padding-right: 10px;
+            margin-left: 30%;
+            padding-left: 10px;
+        }
+    }
+    &__h-icon {
+        float: right;
+        display: flex;
+        position: absolute;
+        right: 10px;
+        bottom: 8px;
+        z-index: +1;
+        text-decoration: none;
+        @media(min-width: 811px) {
+            display: none;
+        }
+    }
+
+    &__item {
+        display: block;
+        align-self: center;
+    }
+    &__link {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: rgba(224, 215, 215, 0.979);
+        display: block;
+        font-size: 1.5rem;
+        &:hover {
+            color: rgba(25, 134, 223, 0.932);
+        }
+        @media (max-width: 810px){
+            padding-bottom: 5px;
+            padding-right: 10px;
+            padding-left: 10px;
+
+        }
+        @media (max-width: 1150px) {
+            font-size: 1rem;
+        }
+        
+    }
+
+}

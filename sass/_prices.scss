@@ -1,0 +1,59 @@
+.prices {
+    background: url(../img/background/cennik-bg.jpg) center fixed;
+    display: flex;
+    width: 100%;
+	padding: 0;
+	background-color: rgb(255, 255, 255);
+    -webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+    -o-background-size: cover;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-content: flex-start;
+    
+      
+
+    &__title {
+        text-align: center;
+        text-transform: uppercase;
+        margin: auto;
+        margin-top: 100px;
+        max-height: 7vh;
+        color: rgba(235, 229, 229, 0.945);
+        flex-basis: 90%;
+        margin-bottom: 40px;
+        @media (max-width: 485px){
+            font-size: 1.2rem;
+        }
+    }
+
+    &__top {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+
+    &__bottom {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+    }
+
+    &__image {
+        flex-basis: 30%;
+        max-width: 350px;
+        padding-right: 5px;
+    }
+
+    &__mobile-fix {
+        flex-basis: 80%;
+        margin: 20px 20px;
+        opacity: 0;
+    }
+}
