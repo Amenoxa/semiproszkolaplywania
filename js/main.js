@@ -10,7 +10,7 @@ doc.ready(function(){
     $(window).scrollTop(0);
 
     var typed = new Typed(".header__text", {
-      strings: ['Nauka pływania dla <b>dzieci</b>', 'Nauka pływania dla <b>młodzieży</b>', 'Nauka pływania dla <b>i dorosłych</b>'],
+      strings: ['Nauka pływania dla <b>dzieci</b>', 'Nauka pływania dla <b>młodzieży</b>', 'Nauka pływania dla <b>dorosłych</b>'],
       typeSpeed: 30,
       backSpeed: 30,
       smartBackspace: true, // this is a default
