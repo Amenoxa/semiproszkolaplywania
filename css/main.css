@@ -375,18 +375,6 @@ canvas {
   max-height: 7vh;
 }
 
-@media (max-width: 735px) {
-  .about__title {
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 485px) {
-  .about__title {
-    font-size: 1.2rem;
-  }
-}
-
 .about__main {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
@@ -686,12 +674,6 @@ canvas {
       flex-basis: 90%;
 }
 
-@media (max-width: 485px) {
-  .oswajanie__title {
-    font-size: 1.2rem;
-  }
-}
-
 .oswajanie__top {
   position: absolute;
   width: 100%;
@@ -789,12 +771,6 @@ canvas {
   margin-bottom: 40px;
   -ms-flex-preferred-size: 90%;
       flex-basis: 90%;
-}
-
-@media (max-width: 485px) {
-  .style__title {
-    font-size: 1.2rem;
-  }
 }
 
 .style__top {
@@ -896,12 +872,6 @@ canvas {
   margin-bottom: 40px;
 }
 
-@media (max-width: 485px) {
-  .prices__title {
-    font-size: 1.2rem;
-  }
-}
-
 .prices__top {
   position: absolute;
   width: 100%;
@@ -956,18 +926,6 @@ canvas {
   font-weight: bold;
   text-align: center;
   max-height: 7vh;
-}
-
-@media (max-width: 735px) {
-  .contact__title {
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 485px) {
-  .contact__title {
-    font-size: 1.2rem;
-  }
 }
 
 .contact__item {

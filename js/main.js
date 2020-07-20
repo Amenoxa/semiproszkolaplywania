@@ -1,8 +1,6 @@
 var doc = jQuery(document);
 
-$(window).on("load", function(){
-    $(".loader").fadeOut("slow");
-});
+
 
 doc.ready(function(){
     "use strict";
@@ -22,7 +20,7 @@ doc.ready(function(){
       
 
 
-})
+
 
 $(document).ready(function(){
   $(".owl-carousel").owlCarousel();
@@ -58,4 +56,10 @@ $('.animation').each(function(){
       offset: '75%'
     })
 
+});
+
+})
+
+$(window).on("load", function(){
+  $(".loader").fadeOut("slow");
 });
