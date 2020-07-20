@@ -1,5 +1,5 @@
-.oswajanie {
-    background: url(../img/background/oswajanie-bg.jpg) center fixed;
+.style {
+    background: url(../img/background/style-bg.jpg) center fixed;
     display: flex;
     width: 100%;
 	padding: 0;
@@ -23,33 +23,38 @@
         margin: auto;
         margin-top: 100px;
         max-height: 7vh;
-        margin-bottom: 40px;
         color: #fff;
+        margin-bottom: 40px;
         flex-basis: 90%;
         @media (max-width: 485px){
             font-size: 1.2rem;
         }
     }
+    
+
+
     &__top {
         position: absolute;
         width: 100%;
         left: 0;
         top: 0;
     }
+
     &__bottom {
         position: absolute;
         width: 100%;
         left: 0;
         bottom: 0;
+        z-index: +1;
     }
 
     &__item {
         justify-content: center;
         justify-items: center;
-        flex-basis: 25%;
+        flex-basis: 20%;
         margin: 20px 20px;
         padding: 10px 15px;
-        max-width: 350px;
+        max-width: 250px;
     }
     &__subtitle {
         color: white;
@@ -60,7 +65,6 @@
         text-align: center;
         padding-left: 20px;
         padding-right: 20px;
-        line-height: 2rem;
         margin-bottom: 10vh;
         @media (max-width: 1260px){
             margin-bottom: 0vh;
@@ -77,9 +81,7 @@
         -o-border-radius: 50%;
         border-color: rgba(153, 205, 50, 0.212);
         @media (max-width: 390px){
-            max-width: 250px;
+            max-width: 300px;
         }
+    }
 }
-
-}
-

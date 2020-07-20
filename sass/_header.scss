@@ -10,9 +10,10 @@
     -o-background-size: cover;
     min-height: 100vh;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: center;
     position: relative;
     overflow: hidden;
+    align-content: space-around;
 
     &__background {
         position: absolute;
@@ -36,19 +37,19 @@
         bottom: 0;
         z-index: +1;
     }
+    &__title-wrap {
+        margin-top: 10vh;
+        justify-content: flex-start;
+    }
 
     &__title {
         letter-spacing: 5px;
         font-weight: 800;
-
-        margin-top: 35vh;
         font-size: 8rem;
-        color: rgba(211, 204, 204, 0.815);
         text-transform: uppercase;
         flex-basis: 100%;
         position: relative;
         text-align: center;
-        z-index: +1;
         margin-bottom: 0px;
         color: #fafafaf1;
         z-index: 1;
@@ -67,76 +68,59 @@
           }   
     }
 
-    
-
-    .water{
-        margin: 0px 0 0 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        z-index: +1;
-        flex-basis: 100%;
-        align-content: center;
-    }
-    .water h1{
-        margin: 0px;
-        z-index: +1;
-        letter-spacing: 5px;
-        font-family: 'Teko', sans-serif;
+    &__subtitle {
+        justify-self: flex-start;
+        margin-top: 0px;
+        letter-spacing: 2.5px;
+        font-weight: 800;
         font-size: 4rem;
         text-transform: uppercase;
-        font-weight: 700;
-        color: #ffffff5d;
-        background-image: url(../img/water.png);
-        -webkit-background-clip: text;
-        animation: water 15s infinite;
-        @media (max-width: 1100px){
-            font-size: 3rem;
-            letter-spacing: 4px;
+        flex-basis: 100%;
+        position: relative;
+        text-align: center;
+        margin-bottom: 0px;
+        color: #f0f4f7b0;
+        z-index: 1;
+        font-family: 'Teko', sans-serif;
+        animation: glow 2s ease-in-out infinite alternate;
+        @media (max-width: 999px){
+            font-size: 2.5rem;
         }
-        @media (max-width: 900px){
-            font-size: 2rem;
-            letter-spacing: 3px;
-        }
-        @media (max-width: 600px){
-            font-size: 1.1rem;
-            letter-spacing: 2px;
-            animation: none;
-            -webkit-animation: none;
-}
+       @keyframes glow {
+            from {
+              text-shadow: 0 0 20px #add1d8e5;
+            }
+            to {
+              text-shadow: 0 0 30px #96acaf, 0 0 10px #b7e2e7ec;
+            }
+          }   
     }
-    @keyframes water {
-        from{
-            background-position: left 0 top -25px;
-        }
-        to{
-            background-position: left 1000px top -25px;
-        }
-    }
+
+
 
     &__text {
         margin-left: 10vw;
         align-self: center;
         text-align: center;
         font-size: 2rem;
-        flex-basis: 100%;
+        flex-basis: 90%;
         color: rgba(218, 216, 216, 0.925);
         position: relative;
         z-index: +1;
+        
         @media (max-width: 999px){
             flex-basis: 100%;
             margin: 10px;
             font-size: 1.2rem;
         }
     }
-    &__overlay-particles {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        z-index: +1;
-        background-color: rgba(26, 25, 25, 0.404);
-    }
+      &__overlay-particles {
+         width: 100%;
+         height: 100%;
+         position: absolute;
+         z-index: +1;
+         background-color: rgba(26, 25, 25, 0.404);
+      }
 }
     canvas {
     display: block;
